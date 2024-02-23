@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "d5d8185e-38d6-4129-81d4-1b9165c21807",
+		"name": "MsAnimais",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28626452"
+	},
+	"item": [
+		{
+			"name": "Listar Animais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/animais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"animais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProvisorio\": \"Toto\",\r\n    \"idadeEstimada\": 2,\r\n    \"raca\": \"Pincher\",\r\n    \"dataAdocao\": null,\r\n    \"condicoesChegada\": \"50% tremendo\",\r\n    \"nomeRecebedor\": \"Geovana\",\r\n    \"dataObito\": null,\r\n    \"porte\": \"Pequeno\",\r\n    \"dataEntrega\": \"2024-02-23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/animais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"animais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/animais/rescue/count?startDate=2024-02-13&endDate=2024-02-23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"animais",
+						"rescue",
+						"count"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-02-13"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-02-23"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
