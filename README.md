@@ -1,15 +1,21 @@
 ### serviço simples
  
-- Sistema para administrar a gestão da DM Motors.
-- Cadastro de vendas: quando muda o mês, a comissão reinicia.
-- Cadastro de vendas: botão para importar arquivo PDF para dentro do sistema e também é possível abrir o arquivo PDF importado.
-- Livro caixa: quando muda o mês, o saldo anterior e o saldo atual na tabela reiniciam.
-
-
 ### Features
-- [x] Post
-- [x] Get
+- [x] Post http://localhost:8081/animais
+- [x] Get http://localhost:8081/animais
+- [x]  Buscar por data Get http://localhost:8081/animais/rescue/count?startDate=2024-02-13&endDate=2024-02-23
 
+{
+    "nomeProvisorio": "Toto",
+    "idadeEstimada": 2,
+    "raca": "Pincher",
+    "dataAdocao": null,
+    "condicoesChegada": "50% tremendo",
+    "nomeRecebedor": "Geovana",
+    "dataObito": null,
+    "porte": "Pequeno",
+    "dataEntrega": "2024-02-23"
+}
 
 ###  🛠 Tecnologias
 - Java JDK 17
@@ -17,6 +23,6 @@
 - Banco de dados H2
 - Spring boot
 - Postman
-  
-![1](https://github.com/menezesledilson/SistemaDMmotors/assets/96630034/7864c2fc-238d-4ef7-9ad4-762d536e0e8d)
+   
 
+![image](https://github.com/menezesledilson/projetoCadastroAnimais/assets/96630034/117eaff5-1a8c-4607-8258-14bcb50434bc)
