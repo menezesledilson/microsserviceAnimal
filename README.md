@@ -1,10 +1,9 @@
-### serviço simples
+## serviço simples cadastro de animais
  
-### Features
-- [x] Post http://localhost:8081/animais
-- [x] Get http://localhost:8081/animais
-- [x]  Buscar por data Get http://localhost:8081/animais/rescue/count?startDate=2024-02-13&endDate=2024-02-23
-
+#### Features
+- Post http://localhost:8081/animais
+- Get http://localhost:8081/animais
+- Buscar por data Get http://localhost:8081/animais/rescue/count?startDate=2024-02-13&endDate=2024-02-23
 {
     "nomeProvisorio": "Toto",
     "idadeEstimada": 2,
@@ -17,7 +16,7 @@
     "dataEntrega": "2024-02-23"
 }
 
-###  🛠 Tecnologias
+####  🛠 Tecnologias
 - Java JDK 17
 - IntelliJ IDEA 2023.1.3
 - Banco de dados H2
